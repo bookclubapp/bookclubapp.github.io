@@ -364,7 +364,7 @@
 		button.alt,
 		.button.alt {
 			background: none;
-			box-shadow: 0 0 0 2px rgba(144, 144, 144, 0.25);
+			box-shadow: 0 0 0 2px rgba(144, 144, 144, 0.50);
 		}
 
 			input[type="submit"].alt:hover,
@@ -1209,12 +1209,22 @@
 		padding-right: 3.5em;
 	}
 
+	section .inner .padd {
+		padding-left: 6em;
+		padding-right: 6em;
+	}
+
 		@media screen and (max-width: 980px) {
 
 			section .inner, article .inner {
 				padding: 2em 0 0.1em 0;
 				padding-right: 2em;
 				padding-left: 2em;
+			}
+
+			section .inner .padd {
+				padding-left: 0;
+				padding-right: 0;
 			}
 
 		}
@@ -1225,6 +1235,11 @@
 				padding: 1em 0 0.1em 0;
 				padding-right: 1em;
 				padding-left: 1em;
+			}
+
+			section .inner .padd {
+				padding-left: 0;
+				padding-right: 0;
 			}
 
 		}
@@ -1465,8 +1480,8 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		min-height: 75vh;
-		height: 75vh;
+		min-height: 100vh;
+		height: 100vh;
 		position: relative;
 		background: #000;
 		background-image: url(../../images/banner.jpg);
